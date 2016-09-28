@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'age', to: 'pages#age'
   put 'age', to: 'pages#person'
   get 'me', to: 'pages#me'
+  post 'me', to: 'pages#me'
 end
