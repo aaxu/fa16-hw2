@@ -1,25 +1,24 @@
 class Person
-  attr_accessor :name, :age, :nickname
+  attr_accessor :name, :age, :nickname, :introduction, :fib_number, :birth_year
 
   def initialize(name, age)
     @name = name
     @age = age
-    @nickname = name[0, 4]
   end
 
   def nickname
     # YOUR IMPLEMENTATION HERE
-    return @nickname
+    @nickname = name[0, 4]
   end
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    return 2016 - @age
+    @birth_year = 2016 - @age
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    return "Hi, my name is " + @name + " and I am " + @age " years old."
+    @introduction = "Hi, my name is " + @name + " and I am " + @age " years old."
   end
 
   def fib_number
